@@ -1,0 +1,8 @@
+C:\Users\pedro.hfalmeida3\source\repos\ExercíciosTI20N\ExercíciosTI20N\bin\Debug\ExercíciosTI20N.exe.config
+C:\Users\pedro.hfalmeida3\source\repos\ExercíciosTI20N\ExercíciosTI20N\bin\Debug\ExercíciosTI20N.exe
+C:\Users\pedro.hfalmeida3\source\repos\ExercíciosTI20N\ExercíciosTI20N\bin\Debug\ExercíciosTI20N.pdb
+C:\Users\pedro.hfalmeida3\source\repos\ExercíciosTI20N\ExercíciosTI20N\obj\Debug\ExercíciosTI20N.csproj.AssemblyReference.cache
+C:\Users\pedro.hfalmeida3\source\repos\ExercíciosTI20N\ExercíciosTI20N\obj\Debug\ExercíciosTI20N.csproj.SuggestedBindingRedirects.cache
+C:\Users\pedro.hfalmeida3\source\repos\ExercíciosTI20N\ExercíciosTI20N\obj\Debug\ExercíciosTI20N.csproj.CoreCompileInputs.cache
+C:\Users\pedro.hfalmeida3\source\repos\ExercíciosTI20N\ExercíciosTI20N\obj\Debug\ExercíciosTI20N.exe
+C:\Users\pedro.hfalmeida3\source\repos\ExercíciosTI20N\ExercíciosTI20N\obj\Debug\ExercíciosTI20N.pdb
