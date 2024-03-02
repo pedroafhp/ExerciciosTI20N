@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,6 +85,77 @@ namespace ExercíciosTI20N
                 return "O número informado é ímpar";
             }
         }//Fim do Exercício Cinco
+
+        //Exercício 06: Faça um programa que peça ao usuário um número e imprima se é positivo, negativo ou zero.
+        public string ExercicioSeis(int num)
+        {
+            if (num > 0)
+            {
+                return "O número informado é positivo!";
+            }
+            else if (num < 0)
+            {
+                return "O número informado é negativo!";
+            }
+            else
+            {
+                return "O número informado é zero!";
+            }//Fim do If
+        }//Fim do Exercício Seis
+
+        //Exercício 07: Faça um programa que peça ao usuário um número e imprima a tabauada desse número.
+        public string ExercicioSete(int num)
+        {
+            string resultado = "";
+            resultado += " Tabuada de " + num;
+            for (int i = 0; i <= 10; i++)
+            {
+                resultado += "\n " + num + " * " + i + " = " + (num * i);
+            }//Fim do For
+            return resultado;
+        }//Fim do Exercício 07
+
+        //Exercício 08: Faça um programa que peça ao usuário um número e imprima os números de 1 até esse número.
+        public string ExercicioOito(int num)
+        {
+            string resultado = "";
+            for (int i = 0; i < num; i++)
+            {
+                resultado += "\n" + (i + 1);
+            }
+            return resultado;
+        }//Fim do Exercício Oito
+
+        //Exercício 09: Faça um programa que peça ao usuário um número e imprima a soma dos números de 1 até esse número.
+        public int ExercicioNove(int num)
+        {
+            int resultado = 0;
+            for (int i = 1; i <= num; i++)
+            {
+                resultado += i;
+            }
+            return resultado;
+        }//Fim do Exercício Nove
+
+        //Exercício 10: Faça um programa que imprima os números primos de 1 a 20.
+        public int ExercicioDez(int num)
+        {
+            int resultado = num;
+            for (int i = 2);
+        }
+
+        //Exercício 11: Faça um programa que peça ao usuário um número e verifique se é primo.
+        public bool ExercicioOnze(int num)
+        {
+            for (int i = 2; i <= Math.Sqrt(num); i++)
+            {
+                if (num % i == 0)
+                {
+                    return false;
+                }//Fim do If
+            }//Fim do For
+            return true;
+        }//Fim do Exercício Onze
 
     }//Fim da Classe
 }//Fim do Projeto
