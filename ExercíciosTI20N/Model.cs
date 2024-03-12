@@ -209,12 +209,12 @@ namespace ExercíciosTI20N
         public int ExercicioQuinze(int num)
         {
             int soma = 0;
-            while (num !=0)
-        {
-            soma += num % 10;
-            num /= 10;
-        }      
-           return soma;
+            while (num != 0)
+            {
+                soma += num % 10;
+                num /= 10;
+            }
+            return soma;
         }//Fim do Exercício Quinze
 
         //Exercício 16: Faça um programa que peça ao usuário um número e imprima os números pares e ímpares de 1 até esse número.
@@ -239,5 +239,99 @@ namespace ExercíciosTI20N
 
         }//Fim do Exercício Dezesseis
 
-    }//Fim da Classe
+        //Exercício 17: Faça um programa que peça ao usuário um número e imprima o dobro desse número.
+        public int ExercicioDezessete(int num)
+        {
+            int resultado = 0;
+            resultado = num * 2;
+            return resultado;
+
+        }//Fim do Exercício Dezessete
+
+        //Exercício 18: Faça um programa que peça ao usuário dois números e imprima a média deles.
+        public string ExercicioDezoito(double num1, double num2)
+        {
+            double media = 0;
+            media = (num1 + num2) / 2;
+            return "A média dos números somados é: " + media;
+        }//Fim do Exercício Dezoito
+
+        //Exercício 19: Faça um programa que converta a temperatura de Celsius para Fahrenheit. A fórmula é F = C * 9/5 + 32.
+        public string ExercicioDezenove(double celsius)
+        {
+            double fahrenheit = 0;
+            fahrenheit = celsius* 9 / 5 + 32;
+            return "A conversão de graus Celsius para Fahrenheit é: " + fahrenheit;
+        }//Fim do Exercício Dezenove
+
+        //Exercício 20: Faça um programa que peça o raio de círculo e imprima a área. A fórmula é A = raio * raio^2.
+        public string ExercicioVinte(double raio)
+        {
+            double area = 0;
+            area = Math.PI * (raio * raio);
+            return "A área do número informado é de: " + area;
+        }//Fim do Exercício Vinte
+
+        //Exercício 21: Faça um programa que peça um número e imprima o seu quadrado.
+        public string ExercicioVinteUm(int num)
+        {
+            int resultado = 0;
+            resultado = num * num;
+            return "O quadrado do número informado é: " + resultado;
+        }//Fim do Exercício Vinte Um
+
+        //Exercício 22: Faça um programa que peça dois números e imprima o maior deles.
+        public int ExercicioVinteDois(int num3, int num4)
+        {
+            if (num3 > num4)
+            {
+                return num3;
+            }//Fim do If
+            else
+            {
+                return num4;
+            }//Fim do Else
+        }//Fim do Exercício Vinte Dois
+
+        //Exercício 23: Faça um programa que peça dois números e imprima "São Iguais" se os números forem iguais ou imprima "São Diferentes" se forem diferentes.
+        public string ExercicioVinteTres(int num5, int num6)
+        {
+            if(num5 == num6)
+            {
+                return "Os números são iguais";
+            }//Fim do If
+            else
+            {
+                return "Os números são diferentes";
+            }//Fim do Else
+        }//Fim do Exercício Vinte Tres
+
+        //Exerc~icio 24: Faça um programa que peça idade do usuário e imprima se ele é maior de idade ou menor de idade.
+        public string ExercicioVinteQuatro(int num)
+        {
+            if (num >= 18)
+            {
+                return "O usuário é maior de idade";
+            }//Fim do If
+            else
+            {
+                return "VOCÊ É MENOR DE IDADE SOME DAQUI, VOU CONTAR PROS SEUS PAIS";
+            }//Fim do Else
+        }//Fim do Exercício Vinte Quatro
+
+        //Exercício 25: Faça um programa que peça dois números e imprima o menor deles.
+        public string ExercicioVinteCinco(int num7, int num8)
+        {
+            if (num7 < num8)
+            {
+                return "O menor número informado é: " + num7;
+            }//Fim do If
+            else
+            {
+                return "O menor número informado é: " + num8;
+            }//Fim do Else
+        }//Fim do Exercício Vinte Cinco
+
+
+        }//Fim da Classe
 }//Fim do Projeto
