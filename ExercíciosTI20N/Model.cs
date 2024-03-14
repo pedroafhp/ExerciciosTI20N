@@ -15,7 +15,7 @@ namespace ExercíciosTI20N
 {
     class Model
     {
-
+ 
         //Contrutor
         public Model()
         {
@@ -169,6 +169,18 @@ namespace ExercíciosTI20N
             return true;
         }//Fim do Exercício Onze
 
+        //Exercicio 12: Faça um programa que calcula o fatorial de um número:
+        public string ExercicioDoze(int num)
+        {
+            int fatorial = 1;
+            for (int i = num; i >= 1; i--)
+            {
+                fatorial *= i;
+            }
+            return "O resultado é:" + fatorial;
+
+        }//Fim do Exercicio Doze
+
         //Exercicio 13: Faça um programa que imprima e sequência de Fibonacci até o décimo termo.
         public string ExercicioTreze()
         {
@@ -260,7 +272,7 @@ namespace ExercíciosTI20N
         public string ExercicioDezenove(double celsius)
         {
             double fahrenheit = 0;
-            fahrenheit = celsius* 9 / 5 + 32;
+            fahrenheit = celsius * 9 / 5 + 32;
             return "A conversão de graus Celsius para Fahrenheit é: " + fahrenheit;
         }//Fim do Exercício Dezenove
 
@@ -296,7 +308,7 @@ namespace ExercíciosTI20N
         //Exercício 23: Faça um programa que peça dois números e imprima "São Iguais" se os números forem iguais ou imprima "São Diferentes" se forem diferentes.
         public string ExercicioVinteTres(int num5, int num6)
         {
-            if(num5 == num6)
+            if (num5 == num6)
             {
                 return "Os números são iguais";
             }//Fim do If
@@ -306,7 +318,7 @@ namespace ExercíciosTI20N
             }//Fim do Else
         }//Fim do Exercício Vinte Tres
 
-        //Exerc~icio 24: Faça um programa que peça idade do usuário e imprima se ele é maior de idade ou menor de idade.
+        //Exercício 24: Faça um programa que peça idade do usuário e imprima se ele é maior de idade ou menor de idade.
         public string ExercicioVinteQuatro(int num)
         {
             if (num >= 18)
@@ -332,6 +344,99 @@ namespace ExercíciosTI20N
             }//Fim do Else
         }//Fim do Exercício Vinte Cinco
 
+        //Exercício 26: Faça um programa que peça a altura e o peso de uma pessoa e calcule o IMC. A fórmula é IMC = peso / altura^2.
+        public string ExercicioVinteSeis(double altura, double peso)
+        {
+            double IMC = 0;
+            IMC = altura / (Math.Pow(peso, 2));
+            return "O IMC é: " + IMC;
+        }//Fim do Exercício Vinte Seis
 
-        }//Fim da Classe
+        //Exercício 27: Faça um algorítimo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
+        public string ExercicioVinteSete(int ano, int mes, int dia)
+        {
+            int idade = 0;
+            idade = (ano * 365) + (mes * 30) + dia;
+            return "A idade em dias é: " + idade;
+        }//Fim do Exercício Vinte Sete
+
+        //Exercício 28: Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que ele recebe uma comissão 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que ultrapassar este valor, calcular e escrever o seu salário total
+        public string ExercicioVinteOito(double vendas, double salario)
+        {
+            double total = 0;
+            if (vendas <= 1500)
+            {
+                total = salario + (0.03 * vendas);
+            }//Fim do If
+            else if (vendas > 1500)
+            {
+                total = salario + (1500 * 0.03) + (1500 - vendas) * 0.05;
+            }//Fim do Else
+
+            return "O salário final é: " + total;
+        }//Fim do Exercício Vinte Oito
+
+        //Exercício 29: Ler 10 valores e escrever quantos desses valores lidos são negativos.
+        public string ExercicioVinteNove()
+        {
+            int num = 0;
+            int cont = 0;
+
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine("Informe um número: ");
+                num = Convert.ToInt32(Console.ReadLine());
+
+                if (num < 0)
+                {
+                    cont++;
+                }//Fim do If
+            }//Fim da For
+
+            return "A quantidade de números negativos são: " + cont;
+        }//Fim do Exercício Vinte Nove
+
+        //Exercício 30: Escreva um algoritmo para ler 10 números. Todos os números lidos com valor inferior a 40 devem ser somados. Escreva o valor final da soma efetuada.
+        public string ExercicioTrinta()
+        {
+            int num = 0;
+            int soma = 0;
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Informe um número: ");
+                num = Convert.ToInt32(Console.ReadLine());
+
+                if (num < 40)
+                {
+                    soma += num;
+                }//Fim do If
+            }//Fim da For
+
+            return "A soma dos números é: " + soma;
+        }//Fim do Exercício Trinta
+
+        //Exercicio 31:Escreva um algoritmo que permita a leitura das notas de uma turma de 20 alunos.Calcular a média da turma.Escrever a média da turma.
+        public string ExercicioTrintaUm()
+        {
+            int soma = 0;
+            int media = 0;
+            int nota = 0;
+
+            for (int i = 0; i <= 20; i++)
+            {
+                Console.WriteLine("Informe um número: ");
+                nota = Convert.ToInt32(Console.ReadLine());
+
+                soma += nota;
+
+            }//Fim do For
+
+            media = soma / 20;
+
+            return "A média da turma é: " + media;
+
+        }//Fim do Exercicio Trinta e Um
+
+    }//Fim da Classe
 }//Fim do Projeto
