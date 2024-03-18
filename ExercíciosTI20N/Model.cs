@@ -879,7 +879,7 @@ namespace ExercíciosTI20N
             Console.WriteLine($"Tempo gasto na viagem: {tempoViagem} horas");
             Console.WriteLine($"Velocidade média: {velocidadeMedia} km/h");
             Console.WriteLine($"Distância percorrida: {distanciaPercorrida} km");
-            Console.WriteLine($"Quantidade de litros utilizada na viagem: {litrosUtilizados:F2} litros");
+            Console.WriteLine($"Quantidade de litros utilizada na viagem: {litrosUtilizados:F2} litros");   
         }//Fim do Exercício Cinquenta
 
     }//Fim da Classe
