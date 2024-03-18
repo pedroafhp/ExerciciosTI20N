@@ -51,7 +51,26 @@ namespace ExercíciosTI20N
                              "28.Exercício 28\n" +
                              "29.Exercício 29\n" +
                              "30.Exercício 30\n" +
-                             "31.Exercício 31\n");
+                             "31.Exercício 31\n" +
+                             "32.Exercício 32\n" +
+                             "33.Exercício 33\n" +
+                             "34.Exercício 34\n" +
+                             "35.Exercício 35\n" +
+                             "36.Exercício 36\n" +
+                             "37.Exercício 37\n" +
+                             "38.Exercício 38\n" +
+                             "39.Exercício 39\n" +
+                             "40.Exercício 40\n" +
+                             "41.Exercício 41\n" +
+                             "42.Exercício 42\n" +
+                             "43.Exercício 43\n" +
+                             "44.Exercício 44\n" +
+                             "45.Exercício 45\n" +
+                             "46.Exercício 46\n" +
+                             "47.Exercício 47\n" +
+                             "48.Exercício 48\n" +
+                             "49.Exercício 49\n" +
+                             "50.Exercício 50\n");
         }
             public void Operacao()
             {
@@ -269,6 +288,103 @@ namespace ExercíciosTI20N
 
                         case 31:
                             Console.WriteLine(modelo.ExercicioTrintaUm());
+                            break;
+
+                        case 32:
+                        modelo.ExercicioTrintaDois();
+                        break;
+
+                        case 33:
+                            Console.WriteLine("Informe a base do retângulo: ");
+                            double baze = Convert.ToDouble(Console.ReadLine());
+
+                            Console.WriteLine("Informe a altura do retângulo: ");
+                            altura = Convert.ToDouble(Console.ReadLine());
+
+                            Console.WriteLine(modelo.ExercicioTrintaTres(baze, altura));
+                            break;
+
+                        case 34:
+                            Console.WriteLine("Insira o número total de eleitores:");
+                            int totalEleitores = Convert.ToInt32(Console.ReadLine());
+
+                            Console.WriteLine("Insira o número de votos brancos:");
+                            int votosBrancos = Convert.ToInt32(Console.ReadLine());
+
+                            Console.WriteLine("Insira o número de votos nulos:");
+                            int votosNulos = Convert.ToInt32(Console.ReadLine());
+
+                            Console.WriteLine("Insira o número de votos válidos:");
+                            int votosValidos = Convert.ToInt32(Console.ReadLine());
+
+                            modelo.ExercicioTrintaQuatro(totalEleitores, votosBrancos, votosNulos, votosValidos);
+                            break;
+
+                        case 35:
+                            Console.WriteLine("Insira o custo de fábrica do carro:");
+                            double custoFabrica = Convert.ToDouble(Console.ReadLine());
+
+                            modelo.ExercicioTrintaCinco(custoFabrica);
+                            break;
+
+                        case 36:
+                            modelo.ExercicioTrintaSeis();
+                            break;
+
+                        case 37:
+                            modelo.ExercicioTrintaSete();
+                            break;
+
+                        case 38:
+                            modelo.ExercicioTrintaOito();
+                            break;
+
+                        case 39:
+                            modelo.ExercicioTrintaNove();
+                            break;
+
+                        case 40:
+                            modelo.ExercicioQuarenta();
+                            break;
+
+                        case 41:
+                            modelo.ExercicioQuarentaUm();
+                            break;
+
+                        case 42:
+                            modelo.ExercicioQuarentaDois();
+                            break;
+
+                        case 43:
+                            modelo.ExercicioQuarentaTres();
+                            break;
+
+                        case 44:
+                            modelo.ExercicioQuarentaQuatro();
+                            break;
+
+                        case 45:
+                            modelo.ExercicioQuarentaCinco();
+                            break;
+
+                        case 46:
+                            modelo.ExercicioQuarentaSeis();
+                            break;
+
+                        case 47:
+                            modelo.ExercicioQuarentaSete();
+                            break;
+
+                        case 48:
+                            modelo.ExercicioQuarentaOito();
+                            break;
+
+                        case 49:
+                            modelo.ExercicioQuarentaNove();
+                            break;
+
+                        case 50:
+                            modelo.ExercicioCinquenta();
                             break;
 
                     default:
