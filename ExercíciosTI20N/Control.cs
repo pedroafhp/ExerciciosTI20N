@@ -70,7 +70,12 @@ namespace ExercíciosTI20N
                              "47.Exercício 47\n" +
                              "48.Exercício 48\n" +
                              "49.Exercício 49\n" +
-                             "50.Exercício 50\n");
+                             "50.Exercício 50\n" +
+                             "51.Exercício 51\n" +
+                             "52.Exercício 52\n" +
+                             "53.Exercício 53\n" +
+                             "54.Exercício 54\n" +
+                             "55.Exercício 55\n");
         }
             public void Operacao()
             {
@@ -386,6 +391,21 @@ namespace ExercíciosTI20N
                         case 50:
                             modelo.ExercicioCinquenta();
                             break;
+                        case 51:
+                            modelo.ExercicioCinquentaUm();
+                            break;
+                        case 52:
+                            Console.WriteLine("A média do vetor: " + modelo.ExercicioCinquentaDois());
+                            break;
+                        case 53:
+                          modelo.ExercicioCinquentaTres();
+                            break;
+                        case 54:
+                          modelo.ExercicioCinquentaQuatro();
+                        break;
+                        case 55:
+                            modelo.ExercicioCinquentaCinco();
+                        break;
 
                     default:
                             Console.WriteLine("Código digitado não é valido!");

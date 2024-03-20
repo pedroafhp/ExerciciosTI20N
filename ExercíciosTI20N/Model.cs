@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Runtime.Remoting.Messaging;
 using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -879,8 +880,107 @@ namespace ExercíciosTI20N
             Console.WriteLine($"Tempo gasto na viagem: {tempoViagem} horas");
             Console.WriteLine($"Velocidade média: {velocidadeMedia} km/h");
             Console.WriteLine($"Distância percorrida: {distanciaPercorrida} km");
-            Console.WriteLine($"Quantidade de litros utilizada na viagem: {litrosUtilizados:F2} litros");   
+            Console.WriteLine($"Quantidade de litros utilizada na viagem: {litrosUtilizados:F2} litros");
         }//Fim do Exercício Cinquenta
 
-    }//Fim da Classe
+        //Exercício 51: Faça um programa que crie um vetor de números inteiros e imprima todos os elementos desse vetor.
+        public void ExercicioCinquentaUm()
+        {
+            int[] vet = new int[4];//Declaração de Vetor
+            //Preenchendo o Vetor
+            for(int i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //Mostrar o Vetor
+            for(int i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i + 1) + "º Posição: " + vet[i]);
+            }
+        }//Fim do Exercício Cinquenta e Um
+
+        //Exercício 52: Faça um programa que crie um vetor de números inteiros e calcule a média dos valores presentes no vetor.
+        public int ExercicioCinquentaDois()
+        {
+            int[] vet = new int[4];
+            int soma = 0;
+            int i = 0;
+            //Preenchimento
+            for(i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i + 1) + "ª Posição: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+                soma += vet[i];//Somando
+            }
+            return soma / i;
+        }//Fim do Exercício Cinquenta e Dois
+
+        //Exercício 53: Faça um programa que crie um vetor de números inteiros e imprima apenas os valores pares desse vetor.
+        public void ExercicioCinquentaTres()
+        {
+            int[] vet = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine((i + 1) + "º número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+
+                if (vet[i] % 2 == 0)
+                {
+                    Console.WriteLine(vet[i]);
+                }//Fim do If
+            }//Fim do For
+        }//Fim do Exercício Cinquenta e Três
+
+        //Exercício 54: Faça um programa que crie um vetor de números inteiros e imprima o maior e o menor valor presente no vetor.
+        public void ExercicioCinquentaQuatro()
+        {
+            int[] vet = new int[5];
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }//Fim do For
+            int maior = vet[0];
+            int menor = vet[0];
+
+            for (int i = 0; i < 5; i++)
+            {
+                if (vet[i] < menor)
+                {
+                    menor = vet[i];
+                }//Fim do If
+                else
+                {
+                    maior = vet[i];
+                }//Fim do Else
+            }//Fim do Else
+        }//Fim do Exercicio Cinquenta e Quatro
+
+        //Exercício 55: Faça um programa que crie um vetor de números inteiros e imprima os elementos na ordem inversa.
+        public void ExercicioCinquentaCinco()
+        {
+                int[] vet = new int[10];
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.WriteLine((i + 1) + "º número: ");
+                    vet[i] = Convert.ToInt32(Console.ReadLine());
+                }//Fim do For
+                int aux = 0;
+                int r = 9;
+
+                for (int i = 0; i < 4; i++)
+                {
+                    aux = vet[r];
+                    vet[r] = vet[i];
+                    vet[i] = aux;
+                    r = r - 1;
+                }//Fim do For
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.WriteLine((i + 1) + "ª Posição: " + vet[i]);
+                }//Fim do For
+            }//Fim do Exercicio Cinquenta e Cinco
+
+        }//Fim da Classe
 }//Fim do Projeto
