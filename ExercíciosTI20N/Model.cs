@@ -982,5 +982,116 @@ namespace ExercíciosTI20N
                 }//Fim do For
             }//Fim do Exercicio Cinquenta e Cinco
 
-        }//Fim da Classe
+        //Exercício 56: Faça um programa que crie um vetor de números inteiros e calcule a soma de todos os valores presentes no vetor.
+        public void ExercicioCinquentaSeis()
+        {
+            int[] vet = new int[5];
+            int soma = 0;
+            int i = 0;
+            for (i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i + 1 + "º número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+                soma += vet[i];
+            }//Fim do For
+            Console.WriteLine("A soma dos números é: " + soma);
+        }//Fim do Exercício Cinquenta e Seis
+
+        //Exercício 57: Faça um programa que crie dois vetores de números inteiros com o mesmo tamanho e realize a soma elemento por elemento desses vetores, armazenando o resultado em um terceiro vetor.
+        public void ExercicioCinquentaSete()
+        {
+            int[] vet1 = new int[5];
+            int[] vet2 = new int[5];
+            int[] vet3 = new int[5];
+            int soma = 0;
+            int i = 0;
+
+            for (i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i + 1 + "º número: ");
+                vet1[i] = Convert.ToInt32(Console.ReadLine());
+            }//Fim do For
+            for (i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i + 1 + "º número: ");
+                vet2[i] = Convert.ToInt32(Console.ReadLine());
+            }//Fim do For
+            for (i = 0; i < 5; i++)
+            {
+                vet3[i] = vet1[i] + vet2[i];
+                Console.WriteLine("A soma dos números é: " + vet3[i]);
+            }//Fim do For
+        }//Fim do Exercicio Cinquenta e Sete
+
+        //Exercício 58: Faça um programa que crie um vetor de números inteiros e verifique se ele está em ordem crescente.
+        public void ExercicioCinquentaOito()
+        {
+            //Criar um vetor de números inteiros
+            int[] vetor = {1, 3, 5, 7, 9};
+
+            //Verificar se o vetor está em ordem crescente
+            bool emOrdemCrescente = VerificarOrdemCrescente(vetor);
+
+            //Exibir o resultado
+            if (emOrdemCrescente)
+            {
+                Console.WriteLine("O vetor está em ordem crescente.");
+            }//Fim do If
+            else
+            {
+                Console.WriteLine("O vetor não está em ordem crescente.");
+            }//Fim do Else
+        }//Fim do Exercício Cinquenta e Oito
+
+        static bool VerificarOrdemCrescente(int[] vetor)
+        {
+            for (int i = 0; i < vetor.Length - 1; i++)
+            {
+                // Se um elemento for maior ou igual ao próximo, não está em ordem crescente
+                if (vetor[i] >= vetor[i + 1])
+                {
+                    return false;
+                }//Fim do If
+            }//Fim do For
+            //Se nenhum elemento for maior ou igual ao próximo, está em ordem crescente
+            return true;
+        }//Fim do Exercício Cinquenta e Oito
+
+         //Exercício 59: Faça um programa que crie um vetor de números inteiros e remova todos os elementos repetidos desse vetor, deixando apenas uma ocorrência de cada valor.
+             public void ExercicioCinquentaNove()
+             {
+                //Criar um vetor de números inteiros com elementos repetidos
+                int[] vetor = { 1, 2, 2, 3, 4, 4, 5, 5, 5, 6 };
+
+                //Remover elementos repetidos
+                int[] vetorSemRepeticao = RemoverRepetidos(vetor);
+
+                //Exibir o vetor sem elementos repetidos
+                Console.WriteLine("Vetor sem elementos repetidos:");
+                foreach (int num in vetorSemRepeticao)
+                {
+                    Console.WriteLine(num);
+                }//Fim da Foreach
+            }//Fim do Exercício Cinquenta e Nove
+
+            static int[] RemoverRepetidos(int[] vetor)
+            {
+                //Criar um HashSet para armazenar elementos únicos
+                HashSet<int> set = new HashSet<int>();
+
+                // Percorrer o vetor e adicionar elementos únicos ao HashSet
+                foreach (int num in vetor)
+                {
+                    set.Add(num);
+                }//Fim da Foreach
+
+                //Criar um novo vetor com os elementos únicos
+                int[] vetorSemRepeticao = new int[set.Count];
+                set.CopyTo(vetorSemRepeticao);
+
+                return vetorSemRepeticao;
+        }//Fim do Exercício Cinquenta e Nove
+
+
+    }//Fim da Classe
 }//Fim do Projeto

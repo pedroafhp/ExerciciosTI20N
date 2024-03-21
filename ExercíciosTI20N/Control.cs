@@ -75,7 +75,11 @@ namespace ExercíciosTI20N
                              "52.Exercício 52\n" +
                              "53.Exercício 53\n" +
                              "54.Exercício 54\n" +
-                             "55.Exercício 55\n");
+                             "55.Exercício 55\n" +
+                             "56.Exercício 56\n" +
+                             "57.Exercício 57\n" +
+                             "58.Exercício 58\n" +
+                             "59.Exercício 59\n");
         }
             public void Operacao()
             {
@@ -391,21 +395,41 @@ namespace ExercíciosTI20N
                         case 50:
                             modelo.ExercicioCinquenta();
                             break;
+
                         case 51:
                             modelo.ExercicioCinquentaUm();
                             break;
                         case 52:
                             Console.WriteLine("A média do vetor: " + modelo.ExercicioCinquentaDois());
                             break;
+
                         case 53:
                           modelo.ExercicioCinquentaTres();
                             break;
+
                         case 54:
                           modelo.ExercicioCinquentaQuatro();
                         break;
+
                         case 55:
                             modelo.ExercicioCinquentaCinco();
                         break;
+
+                        case 56:
+                         modelo.ExercicioCinquentaSeis();
+                        break;
+
+                        case 57:
+                            modelo.ExercicioCinquentaSete();
+                        break;
+
+                        case 58:
+                            modelo.ExercicioCinquentaOito();
+                            break;
+
+                        case 59:
+                            modelo.ExercicioCinquentaNove();
+                            break;
 
                     default:
                             Console.WriteLine("Código digitado não é valido!");
