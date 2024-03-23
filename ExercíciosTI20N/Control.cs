@@ -79,7 +79,10 @@ namespace ExercíciosTI20N
                              "56.Exercício 56\n" +
                              "57.Exercício 57\n" +
                              "58.Exercício 58\n" +
-                             "59.Exercício 59\n");
+                             "59.Exercício 59\n" +
+                             "60.Exercício 60\n" +
+                             "61.Exercício 61\n" +
+                             "62.Exercício 62\n");
         }
             public void Operacao()
             {
@@ -429,6 +432,18 @@ namespace ExercíciosTI20N
 
                         case 59:
                             modelo.ExercicioCinquentaNove();
+                            break;
+
+                        case 60:
+                            modelo.ExercicioSessenta();
+                            break;
+
+                        case 61:
+                            modelo.ExercicioSessentaUm();
+                            break;
+
+                        case 62:
+                            modelo.ExercicioSessentaDois();
                             break;
 
                     default:

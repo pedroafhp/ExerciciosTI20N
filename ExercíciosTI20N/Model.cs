@@ -1092,6 +1092,91 @@ namespace ExercíciosTI20N
                 return vetorSemRepeticao;
         }//Fim do Exercício Cinquenta e Nove
 
+        //Exercício 60: Faça um programa que crie um vetor de strings e imprima todos os elementos desse vetor em ordem alfabética.
+        public void ExercicioSessenta()
+        {
+            //Criar um vetor de strings
+            string[] vetor = { "Banana", "Laranja", "Maçã", "Uva", "Abacaxi" };
+
+            //Ordenar o vetor em ordem alfabética
+            Array.Sort(vetor);
+
+            //Imprimir os elementos do vetor ordenados
+            Console.WriteLine("Elementos do vetor em ordem alfabética:");
+            foreach (string elemento in vetor)
+            {
+                Console.WriteLine(elemento);
+            }//Fim do Foreach
+        }//Fim do Exercício Sessenta
+
+        //Exercício 61: Faça um programa que crie um vetor de números inteiros e verifique quantas vezes um determinado valor aparece no vetor.
+        public void ExercicioSessentaUm()
+        {
+            //Criar um vetor de números inteiros
+            int[] vetor = { 1, 2, 3, 4, 2, 3, 2, 5, 2 };
+
+            //Valor a ser procurado no vetor
+            int valorProcurado = 2;
+
+            //Contador para armazenar o número de ocorrências do valor procurado
+            int contador = ContarOcorrencias(vetor, valorProcurado);
+
+            //Exibir o resultado
+            Console.WriteLine($"O valor {valorProcurado} aparece {contador} vezes no vetor.");
+        }//Fim do Exercício Sessenta e Um
+
+        static int ContarOcorrencias(int[] vetor, int valor)
+        {
+            int contador = 0;
+
+            //Percorrer o vetor e contar o número de ocorrências do valor
+            foreach (int num in vetor)
+            {
+                if (num == valor)
+                {
+                    contador++;
+                }//Fim do If
+            }//Fim do Foreach
+
+            return contador;
+        }//Fim do Exercício Sessenta e Um
+
+        //Exercício 62: Faça um programa que crie um vetor de números inteiros e verifique se ele está em ordem decrescente.
+        public void ExercicioSessentaDois()
+        {
+            // Criar o vetor de números inteiros
+            int[] vetor = { 10, 8, 6, 4, 2 };
+
+            // Verificar se o vetor está em ordem decrescente
+            bool emOrdemDecrescente = VerificarOrdemDecrescente(vetor);
+
+            // Exibir o resultado
+            if (emOrdemDecrescente)
+            {
+                Console.WriteLine("O vetor está em ordem decrescente.");
+            }
+            else
+            {
+                Console.WriteLine("O vetor NÃO está em ordem decrescente.");
+            }
+        }
+
+        // Método para verificar se o vetor está em ordem decrescente
+        static bool VerificarOrdemDecrescente(int[] vetor)
+        {
+            for (int i = 1; i < vetor.Length; i++)
+            {
+                //Se encontrarmos um elemento que é maior ou igual ao anterior,
+                //O vetor não está em ordem decrescente
+                if (vetor[i] >= vetor[i - 1])
+                {
+                    return false;
+                }//Fim do If
+            }//Fim do For
+
+            //Se nenhum elemento viola a ordem decrescente, então o vetor está em ordem decrescente
+            return true;
+        }//Fim do Exercício Sessenta e Dois 
 
     }//Fim da Classe
 }//Fim do Projeto
